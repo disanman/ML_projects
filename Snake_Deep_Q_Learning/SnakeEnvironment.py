@@ -15,7 +15,7 @@ from time import sleep
 class SnakeEnv():
 
     def __init__(self, display=True):
-        self.clock = 0.1
+        self.clock = 0.001
         self.display = display
         self.counter_start = 0
         self.rows = 10
@@ -27,9 +27,9 @@ class SnakeEnv():
                                 'down': np.array([1, 0]),
                                 'left': np.array([0, -1])}
         self.rewards = {'closer': 0.1,
-                        'farther': -0.1,
-                        'grow': 1,
-                        'dead': -1}
+                        'farther': -0.3,
+                        'grow': 5,
+                        'dead': -10}
         self._random_food()
         # Execution variables
         self.episode = 0
@@ -87,7 +87,7 @@ class SnakeEnv():
             self.state_distance_left = self.snake_head_col
         # ----------------------------------------------------
         # Snake length
-        self.state_long_snake = len(self.snake) > 1
+        self.state_long_snake = len(self.snake) > 2
         # create state vector
         self.state = np.array((
             self.state_distance_food_y,

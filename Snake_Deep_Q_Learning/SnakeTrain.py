@@ -55,6 +55,8 @@ class SnakeTrainer():
             self.env.restart_game()
             if episode >= self.print_from:
                 self.display = self.env.display = True
+                self.env.clock = 0.1
+                self.agent.exploration_rate = 0.1
             if (episode % 100) == 0:  # Print training statistics each 100 epochs
                 self._print_train_statistics(episode)
             if self.save_models and (episode % 1000) == 0:   # save a model backup each 1000 episodes
@@ -64,9 +66,9 @@ class SnakeTrainer():
 
 
 @click.command()
-@click.option('--train_episodes', default=5020, help='Number of episodes to train the snake agent')
-@click.option('--print_from', default=5000, help='Minimum number of episodes to display the game screen')
-@click.option('--steps_per_episode', default=200, help='Maximum number of steps per episode')
+@click.option('--train_episodes', default=15100, help='Number of episodes to train the snake agent')
+@click.option('--print_from', default=15000, help='Minimum number of episodes to display the game screen')
+@click.option('--steps_per_episode', default=300, help='Maximum number of steps per episode')
 @click.option('--save_models', default=True, help='Whether or not to save models each 1000 episodes (Models folder)')
 @click.option('--load_model', default='', help='Initial model to load')
 @click.option('--exploration_rate', default=1.0, help='Exploration vs. exploitation rate')

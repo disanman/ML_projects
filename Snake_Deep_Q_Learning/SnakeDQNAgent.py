@@ -19,16 +19,17 @@ class DQNAgent():
         self.action_size = len(self.actions)   # ['up', 'right', 'down', 'left']
         self.actions_encoded = np.identity(self.action_size)
         # Agent hyper-parameters
-        self.memory_size = 500
+        self.memory_size = 1000
         self.memory = deque(maxlen=self.memory_size)
         self.discount_rate = 0.8             # gamma
         self.exploration_rate = 1              # epsilon, will decay with time
-        self.min_exploration_rate = 0.1
+        self.min_exploration_rate = 0.3
+        self.alpha = 0.4
         self.exploration_rate_decay = 0.9995
         self.learning_rate = 0.001              # alpha
         self.counter_to_update_target_nn = 0
-        self.max_counter_to_update_target_nn = 200
-        self.batch_size = 2
+        self.max_counter_to_update_target_nn = 300
+        self.batch_size = 4
         # Related with Neural network
         self._build_models()
         self.epochs = 1
@@ -36,9 +37,9 @@ class DQNAgent():
     def _build_models(self):
         # Neural Net for Deep-Q learning Model
         self.policy_nn = models.Sequential()
-        self.policy_nn.add(layers.Dense(64, activation='relu', input_shape=(self.state_size,)))
+        self.policy_nn.add(layers.Dense(128, activation='relu', input_shape=(self.state_size,)))
+        self.policy_nn.add(layers.Dense(64, activation='relu'))
         self.policy_nn.add(layers.Dense(32, activation='relu'))
-        self.policy_nn.add(layers.Dense(16, activation='relu'))
         self.policy_nn.add(layers.Dense(self.action_size))
         self.policy_nn.compile(loss='mse', optimizer=optimizers.RMSprop(lr=self.learning_rate))
         self.target_nn = clone_model(self.policy_nn)
@@ -49,7 +50,6 @@ class DQNAgent():
 
     def remember(self, state, action_name, reward, new_state, dead):
         self.memory.append((state, self.enconde_action(action_name), reward, new_state, dead))
-        return True
 
     def act(self, state):
         if np.random.rand() <= self.exploration_rate:
@@ -94,7 +94,7 @@ class DQNAgent():
             # ------------
             states, actions, rewards, new_states, deads = self._unpack_history()
             targets = self.policy_nn.predict(states)
-            targets += rewards * actions + deads * self.discount_rate * self.target_nn.predict(new_states)
+            targets += self.alpha * (rewards * actions + deads * (self.discount_rate * self.target_nn.predict(new_states) - targets))
             self.policy_nn.fit(states, targets, epochs=self.epochs, verbose=0)
             # Update exploration rate
             if self.exploration_rate > self.min_exploration_rate:
