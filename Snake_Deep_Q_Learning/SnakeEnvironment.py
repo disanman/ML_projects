@@ -27,8 +27,9 @@ class SnakeEnv():
                                 'down': np.array([1, 0]),
                                 'left': np.array([0, -1])}
         self.rewards = {'closer': 0.1,
+                        'farther': -0.1,
                         'grow': 1,
-                        'dead': -10}
+                        'dead': -1}
         self._random_food()
         # Execution variables
         self.episode = 0
@@ -84,6 +85,9 @@ class SnakeEnv():
             self.state_distance_left = self.snake_head_row - max(body_elements_left) - 1
         else:
             self.state_distance_left = self.snake_head_col
+        # ----------------------------------------------------
+        # Snake length
+        self.state_long_snake = len(self.snake) > 1
         # create state vector
         self.state = np.array((
             self.state_distance_food_y,
@@ -92,6 +96,7 @@ class SnakeEnv():
             self.state_distance_right,
             self.state_distance_down,
             self.state_distance_left,
+            self.state_long_snake
             ))
         return self.state
 
@@ -157,13 +162,16 @@ class SnakeEnv():
 
     def _calculate_reward(self):
         if self.grow:
-            self.reward = self.rewards['grow']
+            self.reward = self.rewards['grow'] + self.score * 0.5
         elif self.dead:
             self.reward = self.rewards['dead']
         else:
             closer_to_food_y = (np.abs(self.new_state[0]) - np.abs(self.initial_state[0])) < 0
             closer_to_food_x = (np.abs(self.new_state[1]) - np.abs(self.initial_state[1])) < 0
-            self.reward = (closer_to_food_y | closer_to_food_x) * 2 * self.rewards['closer'] - self.rewards['closer']
+            if closer_to_food_x | closer_to_food_y:
+                self.reward = self.rewards['closer']
+            else:
+                self.reward = self.rewards['farther']
         self.cum_reward += self.reward
 
     def move_snake(self, direction):

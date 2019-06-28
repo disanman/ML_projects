@@ -19,13 +19,13 @@ class DQNAgent():
         self.action_size = len(self.actions)   # ['up', 'right', 'down', 'left']
         self.actions_encoded = np.identity(self.action_size)
         # Agent hyper-parameters
-        self.memory_size = 1000
+        self.memory_size = 500
         self.memory = deque(maxlen=self.memory_size)
-        self.discount_rate = 0.5             # gamma
+        self.discount_rate = 0.8             # gamma
         self.exploration_rate = 1              # epsilon, will decay with time
         self.min_exploration_rate = 0.1
         self.exploration_rate_decay = 0.9995
-        self.learning_rate = 0.01              # alpha
+        self.learning_rate = 0.001              # alpha
         self.counter_to_update_target_nn = 0
         self.max_counter_to_update_target_nn = 200
         self.batch_size = 2
@@ -38,6 +38,7 @@ class DQNAgent():
         self.policy_nn = models.Sequential()
         self.policy_nn.add(layers.Dense(64, activation='relu', input_shape=(self.state_size,)))
         self.policy_nn.add(layers.Dense(32, activation='relu'))
+        self.policy_nn.add(layers.Dense(16, activation='relu'))
         self.policy_nn.add(layers.Dense(self.action_size))
         self.policy_nn.compile(loss='mse', optimizer=optimizers.RMSprop(lr=self.learning_rate))
         self.target_nn = clone_model(self.policy_nn)
