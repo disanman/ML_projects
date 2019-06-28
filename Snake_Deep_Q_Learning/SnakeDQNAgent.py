@@ -23,10 +23,10 @@ class DQNAgent():
         self.memory = deque(maxlen=self.memory_size)
         self.discount_rate = 0.8             # gamma
         self.exploration_rate = 1              # epsilon, will decay with time
-        self.min_exploration_rate = 0.1
+        self.min_exploration_rate = 0.02
         self.alpha = 0.3
         self.exploration_rate_decay = 0.9995
-        self.learning_rate = 0.001              # alpha
+        self.learning_rate = 0.01              # alpha
         self.counter_to_update_target_nn = 0
         self.max_counter_to_update_target_nn = 200
         self.batch_size = 2

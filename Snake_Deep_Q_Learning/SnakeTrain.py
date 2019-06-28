@@ -42,7 +42,8 @@ class SnakeTrainer():
     def _print_train_statistics(self, episode):
         if episode > 0:
             print(f'\nEpisodes ({episode-100}-{episode}):')
-            print(f'  Mean scores:      {np.array(self.episode_scores[episode-100:episode]).mean():2.2f}')
+            scores = np.array(self.episode_scores[episode-100:episode])
+            print(f'  Mean scores:      {scores.mean():2.2f}, min: {scores.min():2.2f}, max: {scores.max():2.2f}')
             print(f'  Mean cum_rewards: {np.array(self.episode_cum_rewards[episode-100:episode]).mean():2.2f}')
             print(f'  Exploration rate: {self.agent.exploration_rate}')
 
