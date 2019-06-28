@@ -8,6 +8,7 @@ import numpy as np
 from tensorflow.keras import models, layers, optimizers
 from tensorflow.keras.models import clone_model
 from collections import deque
+from datetime import datetime
 
 
 class DQNAgent():
@@ -57,6 +58,17 @@ class DQNAgent():
         best_action = self.actions[np.argmax(q_values)]
         return best_action
 
+    def save_model(self, episode=0, last=False):
+        if last:
+            self.policy_nn.save(f'Models/last_snake_model.h5')
+        else:
+            time_stamp = datetime.now().strftime('%Y%m%d_%H%m')
+            self.policy_nn.save(f'Models/snake_model_{time_stamp}_ep_{episode}.h5')
+
+    def load_model(self, model):
+        self.policy_nn = models.load_model(f'Models/{model}')
+        self.target_nn = models.load_model(f'Models/{model}')
+
     def _unpack_history(self):
         # Initialize vectors
         states = np.ndarray((self.batch_size, self.state_size))
@@ -80,24 +92,9 @@ class DQNAgent():
         if len(self.memory) > self.batch_size:
             # ------------
             states, actions, rewards, new_states, deads = self._unpack_history()
-            targets = rewards * actions + deads * self.discount_rate * self.target_nn.predict(new_states) + self.policy_nn.predict(states)
-            self.policy_nn.fit(x=states, y=targets, epochs=self.epochs, verbose=0)
-            # ------------
-            # Iterate over a history batch
-            #  memory_indexes = range(len(self.memory))
-            #  random_indexes = np.random.choice(memory_indexes, size=self.batch_size)
-            #  for idx, random_idx in enumerate(random_indexes):
-            #      state, action, reward, new_state, dead = self.memory[random_idx]
-            #      target = reward * action + dead * self.discount_rate * np.amax(self.target_nn.predict(new_state.reshape(1, self.state_size)), axis=1)
-            #      self.policy_nn.fit(state.reshape(1, self.state_size), target.reshape(1, self.action_size), verbose=0, epochs=self.epochs)
-            # ------------
-            # Predict all the possibilities
-            #  targets = rewards * actions + deads * self.discount_rate * self.target_nn.predict(new_states)
-            #    learned_value = rewards * actions + self.discount_rate * self.target_nn.predict(new_states)
-            #    target = (1 - self.alpha) * (self.policy_nn.predict(states)) + (self.alpha) * learned_value
-            # target_predictions[:, np.argmax(actions, axis=1)] = target_values    # can be done this without a loop?
-            # target_prediction[0, np.argmax(action)] = target_value
-            # self.policy_nn.fit(states, targets, epochs=self.epochs, verbose=0)
+            targets = self.policy_nn.predict(states)
+            targets += rewards * actions + deads * self.discount_rate * self.target_nn.predict(new_states)
+            self.policy_nn.fit(states, targets, epochs=self.epochs, verbose=0)
             # Update exploration rate
             if self.exploration_rate > self.min_exploration_rate:
                 self.exploration_rate *= self.exploration_rate_decay
