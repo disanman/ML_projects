@@ -97,7 +97,6 @@ class DQNAgent():
 
     def replay(self):
         if len(self.memory) > self.batch_size:
-            # ------------
             states, actions, rewards, new_states, deads = self._unpack_history()
             targets = self.policy_nn.predict(states)
             action_rewards = rewards * actions
@@ -105,12 +104,3 @@ class DQNAgent():
             target_modifier = action_rewards + (1-deads) * learned_value.reshape(self.batch_size, 1)
             targets += target_modifier
             self.policy_nn.fit(states, targets, epochs=self.epochs, verbose=0)
-            # .............................
-            #  cd ~/Documents/Python/ML_projects/Snake_Deep_Q_Learning/
-            #  states[0], actions[0], rewards[0], new_states[0], deads[0]
-            #  targets[0]
-            #  self.policy_nn.fit(states[0].reshape(1, 7), targets[0].reshape(1, 4), epochs=self.epochs, verbose=0)
-            #  self.policy_nn.predict(states[0].reshape(1, 7))
-            #  self.policy_nn.fit(states[0].reshape(1, 7), np.array([[0, 1, 0, 0]]), epochs=self.epochs, verbose=0)
-            #  self.policy_nn.predict(states[0].reshape(1, 7))
-
