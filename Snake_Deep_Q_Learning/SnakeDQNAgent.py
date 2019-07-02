@@ -19,17 +19,17 @@ class DQNAgent():
         self.action_size = len(self.actions)   # ['up', 'right', 'down', 'left']
         self.actions_encoded = np.identity(self.action_size)
         # Agent hyper-parameters
-        self.memory_size = 500
+        self.memory_size = 1000
         self.memory = deque(maxlen=self.memory_size)
-        self.discount_rate = 0.8             # gamma
+        self.discount_rate = 0                 # gamma, will be increased by the SnakeTrainer
         self.exploration_rate = 1              # epsilon, will decay with time
-        self.min_exploration_rate = 0.02
-        self.alpha = 0.3
-        self.exploration_rate_decay = 0.9995
-        self.learning_rate = 0.01              # alpha
+        self.min_exploration_rate = 0.1
+        self.alpha = 1
+        self.exploration_rate_decay = 0.995
+        self.learning_rate = 0.001
         self.counter_to_update_target_nn = 0
-        self.max_counter_to_update_target_nn = 200
-        self.batch_size = 2
+        self.max_counter_to_update_target_nn = 300
+        self.batch_size = 64
         # Related with Neural network
         self._build_models()
         self.epochs = 1
@@ -37,9 +37,9 @@ class DQNAgent():
     def _build_models(self):
         # Neural Net for Deep-Q learning Model
         self.policy_nn = models.Sequential()
-        self.policy_nn.add(layers.Dense(64, activation='relu', input_shape=(self.state_size,)))
+        self.policy_nn.add(layers.Dense(128, activation='relu', input_shape=(self.state_size,)))
+        self.policy_nn.add(layers.Dense(64, activation='relu'))
         self.policy_nn.add(layers.Dense(32, activation='relu'))
-        self.policy_nn.add(layers.Dense(16, activation='relu'))
         self.policy_nn.add(layers.Dense(self.action_size))
         self.policy_nn.compile(loss='mse', optimizer=optimizers.RMSprop(lr=self.learning_rate))
         self.target_nn = clone_model(self.policy_nn)
@@ -60,12 +60,17 @@ class DQNAgent():
         best_action = self.actions[np.argmax(q_values)]
         return best_action
 
-    def save_model(self, episode=0, last=False):
-        if last:
+    def save_model(self, episode=0, last=False, best=False):
+        if best:
+            self.policy_nn.save(f'Models/best_snake_model.h5')
+        elif last:
             self.policy_nn.save(f'Models/last_snake_model.h5')
         else:
-            time_stamp = datetime.now().strftime('%Y%m%d_%H%m')
+            time_stamp = datetime.now().strftime('%Y%m%d_%H%mm')
             self.policy_nn.save(f'Models/snake_model_{time_stamp}_ep_{episode}.h5')
+
+    def _update_target_nn(self):
+        self.target_nn = clone_model(self.policy_nn)
 
     def load_model(self, model):
         self.policy_nn = models.load_model(f'Models/{model}')
@@ -95,14 +100,17 @@ class DQNAgent():
             # ------------
             states, actions, rewards, new_states, deads = self._unpack_history()
             targets = self.policy_nn.predict(states)
-            targets += self.alpha * (rewards * actions + deads * (self.discount_rate * self.target_nn.predict(new_states) - targets))
+            action_rewards = rewards * actions
+            learned_value = self.discount_rate * np.amax(self.target_nn.predict(new_states), axis=1) - np.amax(targets, axis=1)
+            target_modifier = action_rewards + (1-deads) * learned_value.reshape(self.batch_size, 1)
+            targets += target_modifier
             self.policy_nn.fit(states, targets, epochs=self.epochs, verbose=0)
-            # Update exploration rate
-            if self.exploration_rate > self.min_exploration_rate:
-                self.exploration_rate *= self.exploration_rate_decay
-            # update target policy
-            if self.counter_to_update_target_nn >= self.max_counter_to_update_target_nn:
-                self.counter_to_update_target_nn = 0
-                self.target_nn = clone_model(self.policy_nn)
-            else:
-                self.counter_to_update_target_nn += 1
+            # .............................
+            #  cd ~/Documents/Python/ML_projects/Snake_Deep_Q_Learning/
+            #  states[0], actions[0], rewards[0], new_states[0], deads[0]
+            #  targets[0]
+            #  self.policy_nn.fit(states[0].reshape(1, 7), targets[0].reshape(1, 4), epochs=self.epochs, verbose=0)
+            #  self.policy_nn.predict(states[0].reshape(1, 7))
+            #  self.policy_nn.fit(states[0].reshape(1, 7), np.array([[0, 1, 0, 0]]), epochs=self.epochs, verbose=0)
+            #  self.policy_nn.predict(states[0].reshape(1, 7))
+

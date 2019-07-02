@@ -26,9 +26,9 @@ class SnakeEnv():
                                 'right': np.array([0, 1]),
                                 'down': np.array([1, 0]),
                                 'left': np.array([0, -1])}
-        self.rewards = {'closer': 0.1,
+        self.rewards = {'closer': 0.3,
                         'farther': -0.3,
-                        'grow': 5,
+                        'grow': 10,
                         'dead': -10}
         self._random_food()
         # Execution variables
@@ -157,21 +157,24 @@ class SnakeEnv():
                 print('Crashed against wall') if self.crashed_wall else None
                 print('Game lost!')
         print('\nReward: ', self.reward)
-        print(f'Reward: {self.cum_reward:3.2f}', '(cum)')
+        print(f'Reward: {self.cum_reward:3.3f}', '(cum)')
         print('Score: ', self.score)
 
     def _calculate_reward(self):
         if self.grow:
-            self.reward = self.rewards['grow'] + self.score * 0.5
+            self.reward = self.rewards['grow']
         elif self.dead:
-            self.reward = self.rewards['dead']
+            self.reward = self.rewards['dead'] - 0.001 * self.step
+
         else:
             closer_to_food_y = (np.abs(self.new_state[0]) - np.abs(self.initial_state[0])) < 0
             closer_to_food_x = (np.abs(self.new_state[1]) - np.abs(self.initial_state[1])) < 0
             if closer_to_food_x | closer_to_food_y:
                 self.reward = self.rewards['closer']
+
             else:
-                self.reward = self.rewards['farther']
+                self.reward = self.rewards['farther'] - 0.001 * self.step
+
         self.cum_reward += self.reward
 
     def move_snake(self, direction):
