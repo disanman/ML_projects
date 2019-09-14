@@ -10,7 +10,7 @@ import seaborn as sns
 from scipy import stats
 import numpy as np
 import pandas as pd
-from scipy.stats import skew, kurtosis
+from scipy.stats import skew, kurtosis, norm
 import warnings
 
 
@@ -268,3 +268,72 @@ def count_plot(array, title='', add_labels=True, ax=None, show=True):
         plot.set(ylim=(0, max_height * 1.1), yticks=[])   # add some space for the text labels, remove y ticks
     ax.set_title(title) if ax else plt.title(title)   # set plot title for subplot or normal plot
     plt.show() if show else None
+
+
+def zplot(area=0.95, two_tailed=True, align_right=False):
+    """Plots a z distribution with common annotations
+    Example:
+        zplot(area=0.95)
+        zplot(area=0.80, two_tailed=False, align_right=True)
+    Parameters:
+        area (float): The area under the standard normal distribution curve.
+        align (str): The area under the curve can be aligned to the center
+            (default) or to the left.
+    Returns:
+        None: A plot of the normal distribution with annotations showing the
+        area under the curve and the boundaries of the area.
+    """
+    # create plot object
+    fig = plt.figure(figsize=(12, 6))
+    ax = fig.subplots()
+    # create normal distribution
+    x = np.linspace(-5, 5, 1000)
+    y = norm.pdf(x)
+    ax.plot(x, y)
+    # ------------------------------------------------
+    # code to fill areas:
+    # for two-tailed tests
+    if two_tailed:
+        left = norm.ppf(0.5 - area / 2)
+        right = norm.ppf(0.5 + area / 2)
+        ax.vlines(right, 0, norm.pdf(right), color='grey', linestyle='--')
+        ax.vlines(left, 0, norm.pdf(left), color='grey', linestyle='--')
+        ax.fill_between(x, 0, y, color='grey', alpha='0.25', where=(x > left) & (x < right))
+        plt.xlabel('z')
+        plt.ylabel('PDF')
+        plt.text(left, norm.pdf(left), "z = {0:.3f}".format(left), fontsize=12, rotation=90, va="bottom", ha="right")
+        plt.text(right, norm.pdf(right), "z = {0:.3f}".format(right), fontsize=12, rotation=90, va="bottom", ha="left")
+    # for one-tailed tests
+    else:
+        # align the area to the right
+        if align_right:
+            left = norm.ppf(1-area)
+            ax.vlines(left, 0, norm.pdf(left), color='grey', linestyle='--')
+            ax.fill_between(x, 0, y, color='grey', alpha='0.25', where=x > left)
+            plt.text(left, norm.pdf(left), "z = {0:.3f}".format(left),
+                     fontsize=12, rotation=90, va="bottom", ha="right")
+        # align the area to the left
+        else:
+            right = norm.ppf(area)
+            ax.vlines(right, 0, norm.pdf(right), color='grey', linestyle='--')
+            ax.fill_between(x, 0, y, color='grey', alpha='0.25', where=x < right)
+            plt.text(right, norm.pdf(right), "z = {0:.3f}".format(right),
+                     fontsize=12, rotation=90, va="bottom", ha="left")
+    # annotate the shaded area
+    plt.text(0, 0.1, "shaded area = {0:.3f}".format(area), fontsize=12, ha='center')
+    # axis labels
+    plt.xlabel('z')
+    plt.ylabel('PDF')
+    plt.show()
+
+
+def plot_norm_dist(ax, mu=0, std=1, label=None):
+    ''' Plots a normal distribution to the axis provided
+    Args:
+        - ax: (matplotlib axes)
+        - mu: (float) mean of the normal distribution
+        - std: (float) standard deviation of the normal distribution
+        - label: (string or None) label name for the plot'''
+    x = np.linspace(mu - 12 * std, mu + 12 * std, 1000)
+    y = norm(mu, std).pdf(x)
+    ax.plot(x, y, label=label)
