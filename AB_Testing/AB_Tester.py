@@ -30,9 +30,9 @@ class ABTester:
     def __init__(self, A, B=None, significance=0.05, power=0.8, two_sided=True):
         ''' Initializes the AB Tester object
         Args:
-            - A, B: (dict) dictionaries with two key-values: conversions and impressions (both int)
-            - significance level: (float) alpha
-            - power: (float) 1-beta
+            - A, B: (dict) dictionaries with two key-values: "conversions" and "impressions" (both have int values)
+            - significance level: (float) alpha, usually 5%
+            - power: (float) 1-beta, usually 80%
             - two_sided: (bool) wheter a two sided test is used or not (single-sided)
         '''
         self.A = A
@@ -55,9 +55,7 @@ class ABTester:
         pooled_standard_error = np.sqrt(pooled_prob * (1 - pooled_prob) *
                                         (1 / self.A['impressions'] + 1 / self.B['impressions']))
         d_hat = self.B["p_hat"] - self.A["p_hat"]
-        # Finding confidence interval
-        prob = self.significance / 2 if self.two_sided else self.significance   # alpha/2 if two-sided
-        z = -norm.ppf(prob)
+        z = self._get_z_val()
         margin_of_error = z * pooled_standard_error
         left = d_hat - margin_of_error
         right = d_hat + margin_of_error
@@ -82,7 +80,7 @@ class ABTester:
         ''' Calculates the confidence interval of a Binomial distribution of a variant defined by:
         Args:
             - variant: (string) 'A' or 'B'. Represents the variant defined in object initialization
-                        the variant contains: impressions and conversions
+                        the variant contains: impressions and conversions. A for control and B for treatment group
         Returns:
             - confidence_interval: (tuple of 2 floats) with min and max interval values
         '''
@@ -191,7 +189,7 @@ class ABTester:
         plot = sns.lineplot(min_diffs, sample_sizes)
         plot.set(xlabel='Minimum detectable difference (% of CTR base)', ylabel='Sample size',
                  title=fr'Significance level: {self.significance:.0%} ($\alpha$), power: {self.power:.0%} (1-$\beta$)')
-        plot.set_xticklabels(['{:,.0%}'.format(x) for x in plot.get_xticks()])
+        plot.set_xticklabels([f'{x:.0%}' for x in plot.get_xticks()])
         plt.suptitle('Sample size required for a minimum detectable difference')  # actual title
         plt.show()
 

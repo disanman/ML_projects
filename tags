@@ -1,0 +1,333 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+ABTester	AB_Testing/AB_Tester.py	/^class ABTester:$/;"	c
+AB_plot	AB_Testing/AB_Tester.py	/^    def AB_plot(self, show=None, figsize=(10, 6)):$/;"	m	class:ABTester
+DQNAgent	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^class DQNAgent():$/;"	c
+DejaVuSans-100	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-100"\/>$/;"	I
+DejaVuSans-101	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-101"\/>$/;"	I
+DejaVuSans-103	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-103"\/>$/;"	I
+DejaVuSans-105	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-105"\/>$/;"	I
+DejaVuSans-106	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-106"\/>$/;"	I
+DejaVuSans-108	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-108"\/>$/;"	I
+DejaVuSans-109	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-109"\/>$/;"	I
+DejaVuSans-110	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-110"\/>$/;"	I
+DejaVuSans-111	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-111"\/>$/;"	I
+DejaVuSans-112	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-112"\/>$/;"	I
+DejaVuSans-113	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-113"\/>$/;"	I
+DejaVuSans-114	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-114"\/>$/;"	I
+DejaVuSans-115	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-115"\/>$/;"	I
+DejaVuSans-116	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-116"\/>$/;"	I
+DejaVuSans-117	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-117"\/>$/;"	I
+DejaVuSans-118	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-118"\/>$/;"	I
+DejaVuSans-120	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-120"\/>$/;"	I
+DejaVuSans-121	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-121"\/>$/;"	I
+DejaVuSans-122	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-122"\/>$/;"	I
+DejaVuSans-201	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-201"\/>$/;"	I
+DejaVuSans-225	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-225"\/>$/;"	I
+DejaVuSans-237	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-237"\/>$/;"	I
+DejaVuSans-241	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-241"\/>$/;"	I
+DejaVuSans-243	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-243"\/>$/;"	I
+DejaVuSans-46	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-46"\/>$/;"	I
+DejaVuSans-48	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-48"\/>$/;"	I
+DejaVuSans-49	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-49"\/>$/;"	I
+DejaVuSans-50	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-50"\/>$/;"	I
+DejaVuSans-52	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-52"\/>$/;"	I
+DejaVuSans-53	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-53"\/>$/;"	I
+DejaVuSans-54	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-54"\/>$/;"	I
+DejaVuSans-55	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-55"\/>$/;"	I
+DejaVuSans-56	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-56"\/>$/;"	I
+DejaVuSans-65	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-65"\/>$/;"	I
+DejaVuSans-66	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-66"\/>$/;"	I
+DejaVuSans-67	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-67"\/>$/;"	I
+DejaVuSans-69	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-69"\/>$/;"	I
+DejaVuSans-77	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-77"\/>$/;"	I
+DejaVuSans-78	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-78"\/>$/;"	I
+DejaVuSans-80	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-80"\/>$/;"	I
+DejaVuSans-81	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-81"\/>$/;"	I
+DejaVuSans-83	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-83"\/>$/;"	I
+DejaVuSans-84	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-84"\/>$/;"	I
+DejaVuSans-86	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-86"\/>$/;"	I
+DejaVuSans-95	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-95"\/>$/;"	I
+DejaVuSans-97	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-97"\/>$/;"	I
+DejaVuSans-98	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-98"\/>$/;"	I
+DejaVuSans-99	Calidad_Servicio/Calidad_servicio.html	/^" id="DejaVuSans-99"\/>$/;"	I
+FinvizSpider	Finviz_Spider/Spider.py	/^class FinvizSpider():$/;"	c
+Initial data exploration&#182;	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Initial-data-exploration">Initial data exploration<a class="anchor-link" href="#Initial-/;"	h
+Initial-data-exploration	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Initial-data-exploration">Initial data exploration<a class="anchor-link" href="#Initial-/;"	I
+LOG_FORMAT	AB_Testing/AB_Tester.py	/^LOG_FORMAT = '%(message)s'$/;"	v
+PolyCollection_1	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_1">$/;"	I
+PolyCollection_10	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_10">$/;"	I
+PolyCollection_2	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_2">$/;"	I
+PolyCollection_3	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_3">$/;"	I
+PolyCollection_4	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_4">$/;"	I
+PolyCollection_5	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_5">$/;"	I
+PolyCollection_6	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_6">$/;"	I
+PolyCollection_7	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_7">$/;"	I
+PolyCollection_8	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_8">$/;"	I
+PolyCollection_9	Calidad_Servicio/Calidad_servicio.html	/^   <g id="PolyCollection_9">$/;"	I
+Predict	Calidad_Servicio/Calidad_servicio.html	/^<h2 id="Predict">Predict<a class="anchor-link" href="#Predict">&#182;<\/a><\/h2>$/;"	I
+Predict&#182;	Calidad_Servicio/Calidad_servicio.html	/^<h2 id="Predict">Predict<a class="anchor-link" href="#Predict">&#182;<\/a><\/h2>$/;"	i
+SnakeEnv	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^class SnakeEnv():$/;"	c
+SnakeTrainer	Snake_Deep_Q_Learning/SnakeTrain.py	/^class SnakeTrainer():$/;"	c
+Training a support vector machine regressor&#182;	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Training-a-support-vector-machine-regressor">Training a support vector machine regressor/;"	h
+Training-a-support-vector-machine-regressor	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Training-a-support-vector-machine-regressor">Training a support vector machine regressor/;"	I
+Visualizing data trends&#182;	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Visualizing-data-trends">Visualizing data trends<a class="anchor-link" href="#Visualizin/;"	h
+Visualizing-data-trends	Calidad_Servicio/Calidad_servicio.html	/^<h1 id="Visualizing-data-trends">Visualizing data trends<a class="anchor-link" href="#Visualizin/;"	I
+__init__	AB_Testing/AB_Tester.py	/^    def __init__(self, A, B=None, significance=0.05, power=0.8, two_sided=True):$/;"	m	class:ABTester
+__init__	Finviz_Spider/Spider.py	/^    def __init__(self):$/;"	m	class:FinvizSpider
+__init__	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def __init__(self, state_size, actions):$/;"	m	class:DQNAgent
+__init__	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def __init__(self, display=True):$/;"	m	class:SnakeEnv
+__init__	Snake_Deep_Q_Learning/SnakeTrain.py	/^    def __init__(self, train_episodes=5020, print_from=5000, steps_per_episode=200,$/;"	m	class:SnakeTrainer
+__str__	AB_Testing/AB_Tester.py	/^    def __str__(self):$/;"	m	class:ABTester
+_build_models	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def _build_models(self):$/;"	m	class:DQNAgent
+_calculate_reward	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def _calculate_reward(self):$/;"	m	class:SnakeEnv
+_clean_numeric_column	Finviz_Spider/Spider.py	/^    def _clean_numeric_column(self, column_in):$/;"	m	class:FinvizSpider
+_fill_area	AB_Testing/AB_Tester.py	/^    def _fill_area(self, ax, show, show_pvalue=True):$/;"	m	class:ABTester
+_get_AB_test_stats	AB_Testing/AB_Tester.py	/^    def _get_AB_test_stats(self):$/;"	m	class:ABTester
+_get_confidence_interval	AB_Testing/AB_Tester.py	/^    def _get_confidence_interval(self, sample_mean=0, sample_std=1, sample_size=1):$/;"	m	class:ABTester
+_get_distribution	AB_Testing/AB_Tester.py	/^    def _get_distribution(self, variant='control'):$/;"	m	class:ABTester
+_get_first_page	Finviz_Spider/Spider.py	/^    def _get_first_page(self):$/;"	m	class:FinvizSpider
+_get_link	Finviz_Spider/Spider.py	/^    def _get_link(self, link):$/;"	m	class:FinvizSpider
+_get_z_val	AB_Testing/AB_Tester.py	/^    def _get_z_val(self):$/;"	m	class:ABTester
+_initialize_session	Finviz_Spider/Spider.py	/^    def _initialize_session(self):$/;"	m	class:FinvizSpider
+_parse_data_from_tree	Finviz_Spider/Spider.py	/^    def _parse_data_from_tree(self, tree):$/;"	m	class:FinvizSpider
+_plot_alt	AB_Testing/AB_Tester.py	/^    def _plot_alt(self, ax, with_CI=False):$/;"	m	class:ABTester
+_plot_confidence_interval	AB_Testing/AB_Tester.py	/^    def _plot_confidence_interval(self, ax, mu, std, color='grey'):$/;"	m	class:ABTester
+_plot_norm_dist	AB_Testing/AB_Tester.py	/^    def _plot_norm_dist(self, ax, mu=0, std=1, label=None, with_CI=False):$/;"	m	class:ABTester
+_plot_null	AB_Testing/AB_Tester.py	/^    def _plot_null(self, ax, with_CI=True):$/;"	m	class:ABTester
+_print_messages	Finviz_Spider/Spider.py	/^    def _print_messages(self):$/;"	m	class:FinvizSpider
+_print_train_statistics	Snake_Deep_Q_Learning/SnakeTrain.py	/^    def _print_train_statistics(self, episode):$/;"	m	class:SnakeTrainer
+_random_food	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def _random_food(self):$/;"	m	class:SnakeEnv
+_train_episode	Snake_Deep_Q_Learning/SnakeTrain.py	/^    def _train_episode(self, episode):$/;"	m	class:SnakeTrainer
+_unpack_history	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def _unpack_history(self):$/;"	m	class:DQNAgent
+_update_pointers	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def _update_pointers(self):$/;"	m	class:SnakeEnv
+_update_screen	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def _update_screen(self):$/;"	m	class:SnakeEnv
+act	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def act(self, state):$/;"	m	class:DQNAgent
+annotate_colname	AB_Testing/Plots.py	/^def annotate_colname(x, **kws):$/;"	f
+annotate_colname	California_House_prices/PairPlot.py	/^def annotate_colname(x, **kws):$/;"	f
+annotate_colname	Trivago/Plots.py	/^def annotate_colname(x, **kws):$/;"	f
+axes_1	Calidad_Servicio/Calidad_servicio.html	/^  <g id="axes_1">$/;"	I
+cat_plot	AB_Testing/Plots.py	/^def cat_plot(df, target):$/;"	f
+cat_plot	California_House_prices/PairPlot.py	/^def cat_plot(df, main_col):$/;"	f
+cat_plot	Trivago/Plots.py	/^def cat_plot(df, target):$/;"	f
+clean_data	Finviz_Spider/Spider.py	/^    def clean_data(self):$/;"	m	class:FinvizSpider
+compute_power	AB_Testing/AB_Tester.py	/^    def compute_power(self, min_detectable_effect, sample_size=100):$/;"	m	class:ABTester
+cor_matrix	AB_Testing/Plots.py	/^def cor_matrix(df):$/;"	f
+cor_matrix	California_House_prices/PairPlot.py	/^def cor_matrix(df):$/;"	f
+cor_matrix	Trivago/Plots.py	/^def cor_matrix(df):$/;"	f
+corr_plot	AB_Testing/Plots.py	/^def corr_plot(data, target=None, figsize=(7,  7)):$/;"	f
+corr_plot	Trivago/Plots.py	/^def corr_plot(data, target=None, figsize=(7,  7)):$/;"	f
+corrdot	AB_Testing/Plots.py	/^def corrdot(*args, **kwargs):$/;"	f
+corrdot	California_House_prices/PairPlot.py	/^def corrdot(*args, **kwargs):$/;"	f
+corrdot	Trivago/Plots.py	/^def corrdot(*args, **kwargs):$/;"	f
+corrfunc	AB_Testing/Plots.py	/^def corrfunc(x, y, **kws):$/;"	f
+corrfunc	California_House_prices/PairPlot.py	/^def corrfunc(x, y, **kws):$/;"	f
+corrfunc	Trivago/Plots.py	/^def corrfunc(x, y, **kws):$/;"	f
+count_plot	AB_Testing/Plots.py	/^def count_plot(array, title='', add_labels=True, ax=None, show=True):$/;"	f
+count_plot	Trivago/Plots.py	/^def count_plot(array, title='', add_labels=True):$/;"	f
+data	Finviz_Spider/Spider.py	/^    data = spider.clean_data()$/;"	v
+distplot_stats	AB_Testing/Plots.py	/^def distplot_stats(x, fit=None, title=''):$/;"	f
+distplot_stats	Trivago/Plots.py	/^def distplot_stats(x, fit=None, title=''):$/;"	f
+enconde_action	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def enconde_action(self, action_name):$/;"	m	class:DQNAgent
+figure_1	Calidad_Servicio/Calidad_servicio.html	/^ <g id="figure_1">$/;"	I
+get_column_names_from_ColumnTransformer	California_House_prices/CustomFunctions.py	/^def get_column_names_from_ColumnTransformer(column_transformer, verbose=True):$/;"	f
+get_sample_size1	AB_Testing/AB_Tester.py	/^    def get_sample_size1(self, min_detectable_effect=0.2):$/;"	m	class:ABTester
+get_sample_size2	AB_Testing/AB_Tester.py	/^    def get_sample_size2(self, min_detectable_effect=0.2, verbose=True):$/;"	m	class:ABTester
+get_sample_size3	AB_Testing/AB_Tester.py	/^    def get_sample_size3(self, min_detectable_effect):$/;"	m	class:ABTester
+get_stars	AB_Testing/Plots.py	/^def get_stars(rho_in):$/;"	f
+get_stars	Trivago/Plots.py	/^def get_stars(rho_in):$/;"	f
+get_state	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def get_state(self):$/;"	m	class:SnakeEnv
+get_value_counts	AB_Testing/Plots.py	/^def get_value_counts(df, cols, verbose=0):$/;"	f
+get_value_counts	Trivago/Plots.py	/^def get_value_counts(df, cols, verbose=0):$/;"	f
+get_variant_confidence_interval	AB_Testing/AB_Tester.py	/^    def get_variant_confidence_interval(self, variant='A'):$/;"	m	class:ABTester
+hist_plots	AB_Testing/Plots.py	/^def hist_plots(df, col_wrap=3):$/;"	f
+hist_plots	California_House_prices/PairPlot.py	/^def hist_plots(df, col_wrap=3):$/;"	f
+hist_plots	Trivago/Plots.py	/^def hist_plots(df, col_wrap=3):$/;"	f
+joint_plot	AB_Testing/Plots.py	/^def joint_plot(df_in, x, y, sample=None, height=10):$/;"	f
+joint_plot	California_House_prices/PairPlot.py	/^def joint_plot(df_in, x, y, sample=None, height=10):$/;"	f
+joint_plot	Trivago/Plots.py	/^def joint_plot(df_in, x, y, sample=None, height=10):$/;"	f
+legend_1	Calidad_Servicio/Calidad_servicio.html	/^   <g id="legend_1">$/;"	I
+lh	Finviz_Spider/Spider.py	/^import lxml.html as lh   # html parser$/;"	I
+line2d_1	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_1">$/;"	I
+line2d_10	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_10">$/;"	I
+line2d_10	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_10"\/>$/;"	I
+line2d_11	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_11"\/>$/;"	I
+line2d_12	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_12"\/>$/;"	I
+line2d_13	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_13"\/>$/;"	I
+line2d_14	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_14"\/>$/;"	I
+line2d_15	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_15"\/>$/;"	I
+line2d_16	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_16">$/;"	I
+line2d_16	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_16"\/>$/;"	I
+line2d_17	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_17"\/>$/;"	I
+line2d_17	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_17"\/>$/;"	I
+line2d_18	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_18">$/;"	I
+line2d_18	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_18"\/>$/;"	I
+line2d_19	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_19"\/>$/;"	I
+line2d_19	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_19"\/>$/;"	I
+line2d_2	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_2">$/;"	I
+line2d_20	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_20">$/;"	I
+line2d_20	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_20"\/>$/;"	I
+line2d_21	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_21"\/>$/;"	I
+line2d_21	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_21"\/>$/;"	I
+line2d_22	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_22">$/;"	I
+line2d_23	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_23"\/>$/;"	I
+line2d_24	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_24">$/;"	I
+line2d_25	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_25"\/>$/;"	I
+line2d_26	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_26">$/;"	I
+line2d_27	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_27"\/>$/;"	I
+line2d_28	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_28">$/;"	I
+line2d_29	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_29"\/>$/;"	I
+line2d_3	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_3">$/;"	I
+line2d_30	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_30">$/;"	I
+line2d_31	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_31"\/>$/;"	I
+line2d_32	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_32">$/;"	I
+line2d_33	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_33"\/>$/;"	I
+line2d_34	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_34">$/;"	I
+line2d_35	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_35"\/>$/;"	I
+line2d_36	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_36">$/;"	I
+line2d_37	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_37"\/>$/;"	I
+line2d_38	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_38">$/;"	I
+line2d_39	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_39"\/>$/;"	I
+line2d_4	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_4">$/;"	I
+line2d_40	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_40">$/;"	I
+line2d_41	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_41"\/>$/;"	I
+line2d_42	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_42">$/;"	I
+line2d_43	Calidad_Servicio/Calidad_servicio.html	/^    <g id="line2d_43"\/>$/;"	I
+line2d_5	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_5">$/;"	I
+line2d_6	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_6">$/;"	I
+line2d_7	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_7">$/;"	I
+line2d_8	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_8">$/;"	I
+line2d_8	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_8"\/>$/;"	I
+line2d_9	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_9">$/;"	I
+line2d_9	Calidad_Servicio/Calidad_servicio.html	/^   <g id="line2d_9"\/>$/;"	I
+load_model	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def load_model(self, model):$/;"	m	class:DQNAgent
+logger	AB_Testing/AB_Tester.py	/^logger = logging.getLogger()$/;"	v
+m0c3021b89d	Calidad_Servicio/Calidad_servicio.html	/^" id="m0c3021b89d" style="stroke:#e377c2;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+m1972f45a11	Calidad_Servicio/Calidad_servicio.html	/^" id="m1972f45a11" style="stroke:#ff7f0e;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+m19794f658c	Calidad_Servicio/Calidad_servicio.html	/^" id="m19794f658c" style="stroke:#bcbd22;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+m1e097ce70d	Calidad_Servicio/Calidad_servicio.html	/^" id="m1e097ce70d" style="stroke:#1f77b4;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+m89875cd88f	Calidad_Servicio/Calidad_servicio.html	/^" id="m89875cd88f" style="stroke:#2ca02c;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+m9e7d559491	Calidad_Servicio/Calidad_servicio.html	/^" id="m9e7d559491" style="stroke:#d62728;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+ma1204a695e	Calidad_Servicio/Calidad_servicio.html	/^" id="ma1204a695e" style="stroke:#1f77b4;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+matplotlib.axis_1	Calidad_Servicio/Calidad_servicio.html	/^   <g id="matplotlib.axis_1">$/;"	I
+matplotlib.axis_2	Calidad_Servicio/Calidad_servicio.html	/^   <g id="matplotlib.axis_2">$/;"	I
+mb588a262dc	Calidad_Servicio/Calidad_servicio.html	/^" id="mb588a262dc" style="stroke:#e377c2;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mb812ebff55	Calidad_Servicio/Calidad_servicio.html	/^" id="mb812ebff55" style="stroke:#d62728;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mbb4c36d4f7	Calidad_Servicio/Calidad_servicio.html	/^" id="mbb4c36d4f7" style="stroke:#7f7f7f;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mc1045a49d3	Calidad_Servicio/Calidad_servicio.html	/^" id="mc1045a49d3" style="stroke:#17becf;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mc43b4e9e51	Calidad_Servicio/Calidad_servicio.html	/^" id="mc43b4e9e51" style="stroke:#8c564b;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mc96885cac0	Calidad_Servicio/Calidad_servicio.html	/^" id="mc96885cac0" style="stroke:#9467bd;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mcf5cc7f967	Calidad_Servicio/Calidad_servicio.html	/^" id="mcf5cc7f967" style="stroke:#9467bd;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+md824c615c8	Calidad_Servicio/Calidad_servicio.html	/^" id="md824c615c8" style="stroke:#ff7f0e;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mfa64cc9144	Calidad_Servicio/Calidad_servicio.html	/^" id="mfa64cc9144" style="stroke:#8c564b;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+mfefd242d49	Calidad_Servicio/Calidad_servicio.html	/^" id="mfefd242d49" style="stroke:#2ca02c;stroke-opacity:0.2;stroke-width:0.3;"\/>$/;"	I
+move_snake	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def move_snake(self, direction):$/;"	m	class:SnakeEnv
+notebook	Calidad_Servicio/Calidad_servicio.html	/^  <div tabindex="-1" id="notebook" class="border-box-sizing">$/;"	I
+notebook-container	Calidad_Servicio/Calidad_servicio.html	/^    <div class="container" id="notebook-container">$/;"	I
+np	AB_Testing/AB_Tester.py	/^import numpy as np$/;"	I
+np	AB_Testing/Plots.py	/^import numpy as np$/;"	I
+np	California_House_prices/PairPlot.py	/^import numpy as np$/;"	I
+np	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^import numpy as np$/;"	I
+np	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^import numpy as np$/;"	I
+np	Snake_Deep_Q_Learning/SnakeTrain.py	/^import numpy as np$/;"	I
+np	Trivago/Plots.py	/^import numpy as np$/;"	I
+np	Trivago/rb_wilsonscore.py	/^import numpy as np$/;"	I
+pa21b2e28de	Calidad_Servicio/Calidad_servicio.html	/^  <clipPath id="pa21b2e28de">$/;"	I
+pair_plot	AB_Testing/Plots.py	/^def pair_plot(df_in, sample=None, target=None, num_cols=None, hue=None, remove_names=False):$/;"	f
+pair_plot	California_House_prices/PairPlot.py	/^def pair_plot(df_in, sample=None, target=None, num_cols=None, hue=None, remove_names=False):$/;"	f
+pair_plot	Trivago/Plots.py	/^def pair_plot(df_in, sample=None, target=None, num_cols=None, hue=None, remove_names=False):$/;"	f
+patch_1	Calidad_Servicio/Calidad_servicio.html	/^  <g id="patch_1">$/;"	I
+patch_2	Calidad_Servicio/Calidad_servicio.html	/^   <g id="patch_2">$/;"	I
+patch_3	Calidad_Servicio/Calidad_servicio.html	/^   <g id="patch_3">$/;"	I
+patch_4	Calidad_Servicio/Calidad_servicio.html	/^   <g id="patch_4">$/;"	I
+patch_5	Calidad_Servicio/Calidad_servicio.html	/^   <g id="patch_5">$/;"	I
+patch_6	Calidad_Servicio/Calidad_servicio.html	/^   <g id="patch_6">$/;"	I
+pb94760f76a	Calidad_Servicio/Calidad_servicio.html	/^  <clipPath id="pb94760f76a">$/;"	I
+pd	AB_Testing/Plots.py	/^import pandas as pd$/;"	I
+pd	California_House_prices/PairPlot.py	/^import pandas as pd$/;"	I
+pd	Finviz_Spider/Spider.py	/^import pandas as pd$/;"	I
+pd	Trivago/Plots.py	/^import pandas as pd$/;"	I
+plot_norm_dist	AB_Testing/Plots.py	/^def plot_norm_dist(ax, mu=0, std=1, label=None):$/;"	f
+plot_power_vs_sample_size	AB_Testing/AB_Tester.py	/^    def plot_power_vs_sample_size(self, min_sample_size=200, max_sample_size=20000, step_sample_/;"	m	class:ABTester
+plot_sample_size_vs_diff	AB_Testing/AB_Tester.py	/^    def plot_sample_size_vs_diff(self, min_diff=0.01, max_diff=0.03, step_diff=0.001):$/;"	m	class:ABTester
+plot_value_counts	AB_Testing/Plots.py	/^def plot_value_counts(df, cols, top=5, num_cols=3, figsize=(4, 3)):$/;"	f
+plot_value_counts	Trivago/Plots.py	/^def plot_value_counts(df, cols, top=5, num_cols=3, figsize=(4, 3)):$/;"	f
+plt	AB_Testing/AB_Tester.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	AB_Testing/Plots.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	California_House_prices/PairPlot.py	/^import matplotlib.pyplot as plt$/;"	I
+plt	Trivago/Plots.py	/^import matplotlib.pyplot as plt$/;"	I
+print_AB_results	AB_Testing/AB_Tester.py	/^    def print_AB_results(self):$/;"	m	class:ABTester
+print_screen	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def print_screen(self):$/;"	m	class:SnakeEnv
+rb_wilsonscore	Trivago/rb_wilsonscore.py	/^def rb_wilsonscore(count,nobs,confint):$/;"	f
+reg_plots	AB_Testing/Plots.py	/^def reg_plots(data, target, num_cols=3, min_abs_rho=0, figsize=(4, 4)):$/;"	f
+reg_plots	Trivago/Plots.py	/^def reg_plots(data, target, num_cols=3, min_abs_rho=0, figsize=(4, 4)):$/;"	f
+remember	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def remember(self, state, action_name, reward, new_state, dead):$/;"	m	class:DQNAgent
+reorder_df	AB_Testing/Plots.py	/^def reorder_df(df, target, num_cols):$/;"	f
+reorder_df	California_House_prices/PairPlot.py	/^def reorder_df(df, main_col, num_cols):$/;"	f
+reorder_df	Trivago/Plots.py	/^def reorder_df(df, target, num_cols):$/;"	f
+replay	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def replay(self):$/;"	m	class:DQNAgent
+restart_game	Snake_Deep_Q_Learning/SnakeEnvironment.py	/^    def restart_game(self):$/;"	m	class:SnakeEnv
+save_model	Snake_Deep_Q_Learning/SnakeDQNAgent.py	/^    def save_model(self, episode=0, last=False):$/;"	m	class:DQNAgent
+scrape_data	Finviz_Spider/Spider.py	/^    def scrape_data(self, max_pages='all'):$/;"	m	class:FinvizSpider
+sms	AB_Testing/AB_Tester.py	/^import statsmodels.stats.api as sms$/;"	I
+sns	AB_Testing/AB_Tester.py	/^import seaborn as sns$/;"	I
+sns	AB_Testing/Plots.py	/^import seaborn as sns$/;"	I
+sns	California_House_prices/PairPlot.py	/^import seaborn as sns$/;"	I
+sns	Trivago/Plots.py	/^import seaborn as sns$/;"	I
+spider	Finviz_Spider/Spider.py	/^    spider = FinvizSpider()$/;"	v
+text_1	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_1">$/;"	I
+text_10	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_10">$/;"	I
+text_11	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_11">$/;"	I
+text_12	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_12">$/;"	I
+text_13	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_13">$/;"	I
+text_14	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_14">$/;"	I
+text_15	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_15">$/;"	I
+text_16	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_16">$/;"	I
+text_17	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_17">$/;"	I
+text_17	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_17">$/;"	I
+text_18	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_18">$/;"	I
+text_18	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_18">$/;"	I
+text_19	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_19">$/;"	I
+text_2	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_2">$/;"	I
+text_20	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_20">$/;"	I
+text_21	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_21">$/;"	I
+text_22	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_22">$/;"	I
+text_23	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_23">$/;"	I
+text_24	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_24">$/;"	I
+text_25	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_25">$/;"	I
+text_26	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_26">$/;"	I
+text_27	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_27">$/;"	I
+text_28	Calidad_Servicio/Calidad_servicio.html	/^    <g id="text_28">$/;"	I
+text_3	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_3">$/;"	I
+text_4	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_4">$/;"	I
+text_5	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_5">$/;"	I
+text_6	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_6">$/;"	I
+text_7	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_7">$/;"	I
+text_8	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_8">$/;"	I
+text_9	Calidad_Servicio/Calidad_servicio.html	/^     <g id="text_9">$/;"	I
+time_stamp	Finviz_Spider/Spider.py	/^    time_stamp = pd.datetime.now().strftime('%Y%m%d_%H%m')$/;"	v
+train	Snake_Deep_Q_Learning/SnakeTrain.py	/^    def train(self):$/;"	m	class:SnakeTrainer
+train_snake	Snake_Deep_Q_Learning/SnakeTrain.py	/^def train_snake(train_episodes, print_from, steps_per_episode, save_models, load_model, explorat/;"	f
+xtick_1	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_1">$/;"	I
+xtick_2	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_2">$/;"	I
+xtick_3	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_3">$/;"	I
+xtick_4	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_4">$/;"	I
+xtick_5	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_5">$/;"	I
+xtick_6	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_6">$/;"	I
+xtick_7	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_7">$/;"	I
+xtick_8	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_8">$/;"	I
+xtick_9	Calidad_Servicio/Calidad_servicio.html	/^    <g id="xtick_9">$/;"	I
+ytick_1	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_1">$/;"	I
+ytick_2	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_2">$/;"	I
+ytick_3	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_3">$/;"	I
+ytick_4	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_4">$/;"	I
+ytick_5	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_5">$/;"	I
+ytick_6	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_6">$/;"	I
+ytick_7	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_7">$/;"	I
+ytick_8	Calidad_Servicio/Calidad_servicio.html	/^    <g id="ytick_8">$/;"	I
+zplot	AB_Testing/Plots.py	/^def zplot(area=0.95, two_tailed=True, align_right=False):$/;"	f
